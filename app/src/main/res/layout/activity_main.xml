@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#280142"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/primeiraNota"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="NOTA1"
+        android:inputType="textPersonName"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/segundaNota"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="NOTA2"
+        android:inputType="textPersonName"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primeiraNota" />
+
+    <EditText
+        android:id="@+id/faltas"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Faltas"
+        android:inputType="textPersonName"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/segundaNota" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:text="@string/Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faltas" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="293dp"
+        android:layout_height="114dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
